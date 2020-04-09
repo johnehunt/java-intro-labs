@@ -10,7 +10,7 @@ public class BookshopApp {
 		Address publisherAddress = new Address(1, "Main Street", "Some City", "Kent", "KA1 43A");
 		Publisher publisher = new Publisher("Tech Books Publishing Ltd.", publisherAddress);
 		
-		Book book = new Book("Scala Unleashed", author, publisher, 15.95);
+		Book book = new Book("Java Unleashed", author, publisher, 15.95);
 		System.out.println("Book: " + book);
 		
 		System.out.println("\nCalculating the Sales Discount price");
