@@ -1,34 +1,25 @@
 
-public class Publisher {
+public class Publisher extends Person {
 	
-	private String name;
-	private Address address;
+	private String organisation;
 	
-	public Publisher(String name, Address address) {
-		super();
-		this.name = name;
-		this.address = address;
+	public Publisher(String name, Address address, String organisation) {
+		super(name, address);
+		this.organisation = organisation;
 	}
 
-	public String getName() {
-		return name;
+	
+	public String getOrganisation() {
+		return organisation;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public Address getAddress() {
-		return address;
-	}
-
-	public void setAddress(Address address) {
-		this.address = address;
+	public void setOrganisation(String organisation) {
+		this.organisation = organisation;
 	}
 
 	@Override
 	public String toString() {
-		return String.format("Publisher [name=%s, address=%s]", name, address);
+		return String.format("Publisher %s, organisation=%s", organisation, super.toString());
 	}
 	
 }
