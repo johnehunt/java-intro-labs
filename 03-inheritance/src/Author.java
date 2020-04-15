@@ -1,36 +1,23 @@
-public class Author {
+public class Author extends Person {
 	
-	private String name;
-	private Address address;
+	private String genre;
 
-	public Author(String name) {
-		this.name = name;
+	public Author(String name, Address address, String genre) {
+	    super(name, address);
+		this.genre = genre;
+	}
+
+	public String getGenre() {
+		return genre;
 	}
 	
-	public Author(String name, Address address) {
-		this.name = name;
-		this.address = address;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public Address getAddress() {
-		return address;
-	}
-
-	public void setAddress(Address address) {
-		this.address = address;
+	public void setGenre(String genre) {
+		this.genre = genre;
 	}
 
 	@Override
 	public String toString() {
-		return String.format("Author [name=%s, address=%s]", name, address);
+		return String.format("Author genre=%s, %s", genre, super.toString());
 	}
 
 }
