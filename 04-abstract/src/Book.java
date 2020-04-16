@@ -27,7 +27,7 @@ public class Book extends Product {
 		return count;
 	}
 
-	// Define instance methods
+	// Define Instance methods
 	
 	// Implement abstract method from parent class
 	@Override
