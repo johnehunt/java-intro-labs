@@ -5,7 +5,6 @@ public class Product {
 	private double price;
 	private double salePercentage;
 	
-	
 	public Product(String title, double price) {
 		this.title = title;
 		this.price = price;
