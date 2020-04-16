@@ -29,6 +29,7 @@ public class Book extends Product {
 
 	// Define instance methods
 	
+	// Implement abstract method from parent class
 	@Override
 	public void printer() {
 		System.out.println("Book - printer");
