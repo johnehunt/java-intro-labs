@@ -33,6 +33,8 @@ public class Author implements PrettyPrinter {
 		return String.format("Author [name=%s, address=%s]", name, address);
 	}
 
+	// Implements the PrettyPrinter interface
+	
 	@Override
 	public void prettyPrint() {
 		System.out.println(String.format("Author [name=%s, address=%s]", name, address));
