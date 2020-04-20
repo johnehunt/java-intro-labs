@@ -15,6 +15,19 @@ public class Bookshop {
 		return books;
 	}
 	
+	public int getBookCount() {
+		return this.books.size();
+	}
+	
+	public Book getBookByTitle(String title) {
+		for (Book book : getBooks()) {
+			if (book.getTitle().equalsIgnoreCase(title)) {
+				return book;
+			}
+		}
+		return null;
+	}
+	
 	private void initBookList() {
 		try {
 

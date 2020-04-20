@@ -15,7 +15,7 @@ public class BookshopApp {
 			System.out.println("Book: " + book);
 		}
 
-		if (bookshop.getBooks().size() > 0) {
+		if (bookshop.getBookCount() > 0) {
 			Book book1 = bookshop.getBooks().get(0);
 			book1.setSaleDiscount(10.0);
 			System.out.println("Sale price of book: " + book1.calculateSalePrice());
@@ -28,6 +28,9 @@ public class BookshopApp {
 			salesProduct.setSaleDiscount(10.0);
 			System.out.println("Sale price of book: " + salesProduct.calculateSalePrice());
 		}
+		
+		Book book = bookshop.getBookByTitle("Java Unleashed");
+		System.out.println(book);
 
 	}
 
